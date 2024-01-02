@@ -1,9 +1,9 @@
 const {Router} = require("express");
-const {testController, cardController} = require("./controller");
+const {testController, cardController, cardFilterController} = require("./controller");
 const routes = Router();
 
-routes.post('/', testController);
 routes.post('/card', cardController);
+routes.post('/card/filter', cardFilterController);
 
 
 

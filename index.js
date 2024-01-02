@@ -4,6 +4,11 @@ const routes = require("./controller/router");
 const app = express();
 const port = 4000;
 
+
+
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
+
 app.get('/', (req, res) => {
     res.send('Welcome to my server!');
 });

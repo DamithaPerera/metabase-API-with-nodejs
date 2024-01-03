@@ -29,7 +29,7 @@ async function initializeSession() {
 }
 
 
-app.use('/v1/metabase', routes);
+app.use('/', routes);
 
 
 app.listen(port, () => {
